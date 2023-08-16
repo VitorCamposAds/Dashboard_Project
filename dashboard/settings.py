@@ -13,6 +13,10 @@ import os
 from pathlib import Path
 import dj_database_url
 import dj_static
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -86,7 +90,14 @@ DATABASES = {
 '''
 
 DATABASES = {
-    'default': dj_database_url.config()
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'django_wezw',
+        'USER': 'django_wezw_user',
+        'PASSWORD': 'BNdj9LgO2yZnCTRL2MRlX3Wwht3VGKgZ',
+        'HOST': 'dpg-cj6gglme546c73ap5j2g-a.oregon-postgres.render.com',
+        'PORT': '5432',
+    }
 }
 
 # Password validation
