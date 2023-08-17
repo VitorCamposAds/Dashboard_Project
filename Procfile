@@ -1,2 +1,1 @@
-web: gunicorn Dashboard_Project.wsgi:application --static-map /static=/home/vitor/PycharmProjects/Dashboard_Project/static
-
+web: gunicorn Dashboard_Project.wsgi:application --env DJANGO_SETTINGS_MODULE=dashboard.settings
