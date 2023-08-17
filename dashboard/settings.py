@@ -75,8 +75,8 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = 'dashboard.wsgi.application'
-WSGI_APPLICATION = 'dj_static:Cling'
+WSGI_APPLICATION = 'dashboard.wsgi.application'
+#WSGI_APPLICATION = 'dj_static:Cling'
 
 
 
