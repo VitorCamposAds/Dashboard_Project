@@ -59,7 +59,6 @@ function gera_cor_fortissima(qtd) {
     return cores_fortissimas;
 }
 
-
 function renderiza_faturamento_mensal(url){
     fetch(url, {
         method: 'get',
