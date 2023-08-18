@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from django.contrib import admin
 
 urlpatterns = [
     path('', views.home, name="home"),
@@ -9,3 +10,7 @@ urlpatterns = [
     path('relatorio_funcionario', views.relatorio_funcionario, name="relatorio_funcionario"),
     path('renderiza_despesas', views.renderiza_despesas, name="renderiza_despesas")
 ]
+
+admin.site.index_title = 'Projeto Dashboard'
+admin.site.site_header = 'Administração do Projeto-Dashboard-Vitor'
+admin.site.site_title = 'Administração do Site'
